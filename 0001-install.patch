@@ -1,0 +1,49 @@
+From 1ab075b158c62cf1424ec49796c8d21ef515d646 Mon Sep 17 00:00:00 2001
+From: wjyrich <1071633242@qq.com>
+Date: Tue, 17 Sep 2024 17:39:41 +0800
+Subject: [PATCH] install
+
+---
+ src/gui/qmtunnel-gui.desktop | 11 +++++++++++
+ src/gui/qmtunnel-gui.pro     |  8 ++++++++
+ 2 files changed, 19 insertions(+)
+ create mode 100644 src/gui/qmtunnel-gui.desktop
+
+diff --git a/src/gui/qmtunnel-gui.desktop b/src/gui/qmtunnel-gui.desktop
+new file mode 100644
+index 0000000..cf8a762
+--- /dev/null
++++ b/src/gui/qmtunnel-gui.desktop
+@@ -0,0 +1,11 @@
++[Desktop Entry]
++Categories=Accessibility;Qt;Utility;
++Exec=qmtunnel-gui
++Name=qmtunnel-gui
++Name[zh_CN]=qmtunnel-gui
++Icon=qmtunnel-gui
++StartupNotify=false
++Terminal=false
++Type=Application
++GenericName=qmtunnel-gui
++Version=0.1
+\ No newline at end of file
+diff --git a/src/gui/qmtunnel-gui.pro b/src/gui/qmtunnel-gui.pro
+index dea0a54..7ea9376 100644
+--- a/src/gui/qmtunnel-gui.pro
++++ b/src/gui/qmtunnel-gui.pro
+@@ -92,3 +92,11 @@ RESOURCES += \
+     gui.qrc
+ 
+ RC_FILE = gui.rc
++
++target.path = $$PREFIX/bin
++desktop.files = qmtunnel-gui.desktop
++desktop.path = $$PREFIX/share/applications/
++icons.path = $$PREFIX/share/icons/hicolor/apps/
++icons.files = images/icons/qmtunnel-gui.png
++
++INSTALLS += target desktop icons
+\ No newline at end of file
+-- 
+2.43.4
+

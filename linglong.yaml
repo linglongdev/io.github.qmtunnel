@@ -1,0 +1,30 @@
+version: "1"
+
+package:
+  id: io.github.qmtunnel
+  name: qmtunnel
+  version: 0.0.0.1
+  kind: app
+  description: |
+    qmTunnel is TCP/UDP/Unix-socket tunneling cross-platform tool with GUI written in Qt
+
+command:
+  - /opt/apps/io.github.qmtunnel/files/bin/qmtunnel-gui
+
+base: org.deepin.foundation/23.0.0
+runtime: org.deepin.Runtime/23.0.1
+
+sources:
+  - kind: git
+    url: https://github.com/karikhn/qmtunnel.git
+    version: master
+    commit: 9585c8d68c547a5a6aebedffab69b3ef5924059a
+
+build: |
+  cd /project/linglong/sources/qmtunnel.git
+  git apply ../../../0001-install.patch
+  cp src/gui/images/icons/icon128.png src/gui/images/icons/qmtunnel-gui.png
+  cd src/gui
+  qmake -makefile PREFIX=${PREFIX} LIB_INSTALL_DIR=${PREFIX}/lib/${TRIPLET}
+  make -j$(nproc)
+  make install
