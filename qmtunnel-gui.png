@@ -1,0 +1,26 @@
+{
+	"mainWindow":	{
+		"splitterState":	"AAAA/wAAAAEAAAACAAABAAAAAhsB/////wEAAAABAA==",
+		"geometry":	"AdnQywADAAAAAAAAAAAAAAAAA2UAAAL3AAAAAQAAABkAAANkAAAC9gAAAAAAAAAAB34AAAABAAAAGQAAA2QAAAL2",
+		"state":	"AAAA/wAAAAD9AAAAAAAAA2QAAAK6AAAABAAAAAQAAAAIAAAACPwAAAAA",
+		"browserTreeState":	"AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAMYAAAACAQEAAAEAAAAAAAAAAQAAAGT/////AAAAgQAAAAAAAAACAAAARgAAAAEAAAADAAAAgAAAAAEAAAAAAAAD6AAAAABk",
+		"browserTreeStateVersion":	1,
+		"browserTreeHeaderFontSize":	8,
+		"page_tunnelVersion":	1,
+		"page_tunnelAutoUpdate":	true,
+		"page_tunnelAutoUpdateInterval":	2,
+		"tunnelConnList_version":	1,
+		"tunnelConnList_autoUpdate":	true,
+		"tunnelConnList_getDisconnected":	false,
+		"tunnelConnList_autoUpdateInterval":	2,
+		"tunnelConnList_tableHeaderState":	"AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAArwAAAAHAAEBAAAAAAAAAAAAAAAAAGT/////AAAAhAAAAAAAAAAHAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAD6AAAAAAA",
+		"WidgetMgrClient":	{
+		}
+	},
+	"WidgetUserGroups":	{
+		"splitterState":	"AAAA/wAAAAEAAAAC//////////8A/////wEAAAACAA==",
+		"version":	2
+	},
+	"version":	4,
+	"gui_flags":	"1"
+}
